@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { decrement, increment } from "../redux-new/counter/actions";
 
-function Counter({ count, increment, decrement, id }) {
+function HooksCounter({ count, increment, decrement, id }) {
     console.log(id);
     return (
         <div className="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow">
@@ -38,4 +38,4 @@ const mapDispatchProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchProps)(Counter);
+export default connect(mapStateToProps, mapDispatchProps)(HooksCounter);
